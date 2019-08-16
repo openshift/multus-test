@@ -1,5 +1,4 @@
-FROM openshift/origin-node:v4.0
-#FROM registry.redhat.io/ubi8
+FROM registry.access.redhat.com/ubi8/ubi
 
 RUN yum -y install iproute && \
     curl -LO https://github.com/bats-core/bats-core/archive/v1.1.0.tar.gz && \
