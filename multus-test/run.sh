@@ -10,6 +10,14 @@ if [ $# -eq 1 ]; then
 			echo "Basic tests on OpenShift"
 			/multus-test/scripts/basic-openshift.sh
 			;;
+		"dhcp-daemonset")
+			echo "DHCP DaemonSet tests"
+			/multus-test/scripts/dhcp-daemonset.sh
+			;;
+		"dhcp-daemonset-openshift")
+			echo "DHCP DaemonSet tests on OpenShift"
+			/multus-test/scripts/dhcp-daemonset-openshift.sh
+			;;
 	esac
 fi
 
